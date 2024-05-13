@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        .profile {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .phone, .email {
+            margin-bottom: 10px;
+        }
+
+        .bookings {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .bookings th, .bookings td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .bookings th {
+            background-color: #f2f2f2;
+        }
+
+        .bookings tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="prof.png" alt="Profile Picture" class="profile-pic">
+        <h1 class="name">John Doe</h1>
+        <p class="phone">Phone: 123-456-7890</p>
+        <p class="email">Email: john.doe@example.com</p>
+        <h2>Recent Bookings</h2>
+        <table class="bookings">
+            <tr>
+                <th>Date</th>
+                <th>Booking ID</th>
+                <th>Details</th>
+            </tr>
+            <!-- Add booking details here -->
+        </table>
+    </div>
+</body>
+</html>

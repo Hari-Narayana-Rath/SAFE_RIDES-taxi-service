@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Details</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+        margin-top: 0;
+    }
+    #bookingDetails {
+        padding: 10px;
+    }
+    #bookingDetails div {
+        margin-bottom: 10px;
+    }
+    #bookingDetails div strong {
+        margin-right: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Booking Details</h2>
+    <div id="bookingDetails">
+        <div><strong>Name:</strong> <?php echo $user['name']; ?></div>
+        <div><strong>Phone Number:</strong> <?php echo $user['phone']; ?></div>
+        <div><strong>Pickup Location:</strong> <?php echo $user['pickup_location']; ?></div>
+        <div><strong>Drop Location:</strong> <?php echo $user['drop_location']; ?></div>
+    </div>
+</div>
+
+</body>
+</html>
